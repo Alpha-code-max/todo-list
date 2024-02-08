@@ -41,8 +41,8 @@ function deleteTodo(id){
     console.log(todoIndex)
     todoArray.splice(todoIndex, 1);
     console.log(todoArray.splice(todoIndex, 1))
-    // localStorage.removeItem('todos', JSON.stringify(todoArray))
-    // location.reload()
+    localStorage.setItem('todos', JSON.stringify(todoArray))
+    location.reload()
 }
 
 
